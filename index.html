@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Schema</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <div class="logo-group">
+                <h1>Svenssons Hantverk AB</h1>
+                <img src="resources/hammericon.png" alt="Hammare" class="header-icon">
+            </div>
+
+            <div class="user-group">
+                <span class="user-name">Chef</span>
+                <img src="resources/profilepic.png" alt="Profilbild" class="user-icon">
+                <img src="resources/settingsicon.png" alt="Inställningar" class="settings-icon">
+            </div>
+        </header>
+
+        <div class="panel">
+            <div class="rubrik">
+                <h2>Bemanning</h2>
+                <p>Översikt över alla hantverkare kommande 4 veckor.</p>
+            </div>
+            <div class="drop-downs">
+                <div class="search-wrapper">
+                    <input type="text" class="search" placeholder="🔍 Sök hantverkare...">
+                </div>
+                <div class="profession">
+                    <select class="dropdown">
+                        <option>Yrke: </option>
+                        <option>Alla</option>
+                        <option>Säljare</option>
+                        <option>Ekonom</option>
+                        <option>Målare</option>
+                        <option>Snickare/Målare</option>
+                        <option>Snickare</option>
+                        <option>Snickare/Elektriker</option>
+                        <option>Elektriker</option>
+                        <option>Rörmokare</option>
+                        <option>Rörmokare/Murare</option>
+                        <option>Murare</option>
+                    </select>
+                </div>
+                <div class="status">
+                    <select class="dropdown">
+                        <option>Status: </option>
+                        <option>Alla</option>
+                        <option>Tillgänglig</option>
+                        <option>Bokad 100%</option>
+                        <option>Bokad 50%</option>
+                        <option>Frånvaro</option>
+                    </select>
+                </div>
+                <div class="week">
+                    <select class="dropdown">
+                        <option>Vecka: </option>
+                        <option>Alla</option>
+                        <option>v20-23</option>
+                        <option>v24-27</option>
+                        <option>v28-31</option>
+                        <option>v32-35</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
