@@ -6,9 +6,9 @@ createApp({
 
         // Exempeldata
         const workers = ref([
-            { 
-                name: "Stefan Mcqueen", 
-                role: "Säljare", 
+            {
+                name: "Stefan Mcqueen",
+                role: "Säljare",
                 schedule: [
                     ['booked', 'booked', 'booked', 'booked'], // Vecka 20
                     ['half', 'half', 'half', 'half'],       // Vecka 21
@@ -16,17 +16,17 @@ createApp({
                     ['available', 'available', 'half', 'half'] // Vecka 23
                 ]
             },
-            { 
-                name: "Anna Svensson", 
-                role: "Målare", 
+            {
+                name: "Anna Svensson",
+                role: "Målare",
                 schedule: [
-                    ['booked', 'booked', 'booked', 'booked'],
-                    ['half', 'half', 'half', 'half'],
-                    ['absence', 'absence', 'absence', 'available'],
-                    ['available', 'available', 'available', 'available']
+                    ['booked', 'booked', 'booked', 'booked'], // Vecka 20
+                    ['half', 'half', 'half', 'half'],       // Vecka 21
+                    ['absence', 'absence', 'absence', 'available'], // Vecka 22
+                    ['available', 'available', 'available', 'available'] // Vecka 23
                 ]
             }
-            // Fyll på med fler hantverkare här...
+            //här lägger vi till fler änna 
         ]);
 
         const stats = ref([
