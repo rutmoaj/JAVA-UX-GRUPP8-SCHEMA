@@ -82,3 +82,9 @@ body {
 .panel p {
     margin: 0;
 }
+
+.drop-downs {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* avstånd mellan elementen */
+}
