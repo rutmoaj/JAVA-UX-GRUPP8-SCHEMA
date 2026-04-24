@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -74,8 +75,16 @@
             </div>
         </div>
 
+        <div id="app">
+            <div v-for="worker in workers" :key="worker.name">
+                <h3>{{ worker.name }}</h3>
+                <p>{{ worker.professions.join(", ") }}</p>
+            </div>
+        </div>
+
     </div>
 
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

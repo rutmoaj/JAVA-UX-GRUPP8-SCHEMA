@@ -99,7 +99,8 @@ body {
     margin: 0;
 }
 
-.drop-downs{
-    display: flex !important;
-    background-color: red;
+.drop-downs {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* avstånd mellan elementen */
 }
