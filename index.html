@@ -75,29 +75,40 @@
             </div>
         </div>
 
-     <div class="profession-block">
-        <div class="worker-row">
-            <div class="worker-identity">
-                <span class="name">Stefan Mcqueen</span>
-                <span class="title">Salesperson</span>
-            </div>
-            <div class="schedule-grid">
-                <div class="week-group">
-                    <div class="day-block booked"></div>
-                    <div class="day-block booked"></div>
-                    <div class="day-block half"></div>
-                    <div class="day-block available"></div>
+        <div id="app" class="container">
+            <div class="stats-container">
+                <div v-for="stat in stats" :key="stat.label" class="stat-card">
+                    <span class="label">{{ stat.label }}</span>
+                    <strong>{{ stat.value }}</strong>
                 </div>
-                <div class="week-group">
-                    <div class="day-block absence">X</div>
-                    <div class="day-block available"></div>
-                    <div class="day-block available"></div>
-                    <div class="day-block booked"></div>
-
-            
-
             </div>
 
+            <div class="calendar-view">
+                <div class="week-headers">
+                    <div class="header-spacer"></div>
+                    <div class="week-labels">
+                        <span>Vecka 20</span>
+                        <span>Vecka 21</span>
+                        <span>Vecka 22</span>
+                        <span>Vecka 23</span>
+                    </div>
+                </div>
+
+                <div v-for="worker in workers" :key="worker.name" class="worker-row">
+                    <div class="worker-identity">
+                        <span class="name">{{ worker.name }}</span>
+                        <span class="title">{{ worker.role }}</span>
+                    </div>
+
+                    <div class="schedule-grid">
+                        <div v-for="(week, index) in worker.schedule" :key="index" class="week-group">
+                            <div v-for="(status, sIndex) in week" :key="sIndex" :class="['box', status]">
+                                <span v-if="status === 'absence'">X</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script type="module" src="script.js"></script>

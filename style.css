@@ -137,10 +137,22 @@ body {
 }
 
 .worker-identity {
+    width: 350px; 
+    flex-shrink: 0;
     display: flex;
-    width: 400px; /* Justera denna för att linjera med dina headers */
 }
 
+.header-spacer {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+.schedule-grid {
+    display: flex;
+    flex: 1;
+    justify-content: space-between; 
+    padding: 0 10px;
+}
 .name {
     flex: 1;
 }
@@ -156,14 +168,77 @@ body {
     margin-top: 20px;
 }
 
-.header-spacer {
-    width: 400px; /* Samma som .worker-identity */
-}
 
 .week-labels {
     display: flex;
     flex: 1;
-    justify-content: space-around;
-    font-weight: bold;
+    justify-content: space-between;
+    padding: 0 10px;
 }
+
+.week-group {
+    display: flex;
+    gap: 3px;
+    width: 130px;
+    justify-content: center;
+}
+
+.week-labels span {
+    width: 130px; 
+    text-align: center;
+}
+
+/* STATISTIK-KORT TOP ROW KORTEN */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.stat-card {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+.stat-card .label { display: block; font-size: 12px; color: #666; margin-bottom: 5px; }
+
+/* SCHEMA-BOXARNA */
+.box {
+    width: 30px;
+    height: 16px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+.booked { background-color: #8B2323; } /* Mörkröd */
+.available { border: 2px solid #2ecc71; } /* Grön ram */
+.half { 
+    background: repeating-linear-gradient(45deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px); 
+    border: 1px solid #e67e22; 
+}
+.double-half {
+    background: repeating-linear-gradient(0deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
+    border: 1px solid #e67e22;
+}
+.absence { background-color: white; border: 1px solid #333; }
+
+LAYOUT FÖR RADER
+.profession-card {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.worker-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #eee;
+}
+.worker-info { display: flex; width: 400px; }
+.worker-info .name { flex: 1; }
+.worker-info .title { font-weight: bold; }
+
 
