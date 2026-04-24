@@ -104,3 +104,66 @@ body {
     align-items: center;
     gap: 12px; /* avstånd mellan elementen */
 }
+
+.profession-block {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* .worker-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+} */
+/* 
+.worker-row:last-child {
+    border-bottom: none;
+} */
+
+/* .name {
+    font-weight: 500;
+} */
+
+.worker-row {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 25px;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.worker-identity {
+    display: flex;
+    width: 400px; /* Justera denna för att linjera med dina headers */
+}
+
+.name {
+    flex: 1;
+}
+
+.title {
+    flex: 1;
+    font-weight: 600; /* Fetstil på yrket enligt din bild */
+}
+
+.week-headers {
+    display: flex;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+.header-spacer {
+    width: 400px; /* Samma som .worker-identity */
+}
+
+.week-labels {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    font-weight: bold;
+}
+

@@ -36,35 +36,35 @@
                     <input type="text" class="search" placeholder="🔍 Sök hantverkare...">
                 </div>
                 <div class="profession">
-                    <select class="dropdown">
-                        <option>Yrke: </option>
-                        <option>Alla</option>
-                        <option>Säljare</option>
-                        <option>Ekonom</option>
-                        <option>Målare</option>
-                        <option>Snickare/Målare</option>
-                        <option>Snickare</option>
-                        <option>Snickare/Elektriker</option>
-                        <option>Elektriker</option>
-                        <option>Rörmokare</option>
-                        <option>Rörmokare/Murare</option>
-                        <option>Murare</option>
+                    <select class="dropdown" v-model="selectedProfession">
+                        <option>Profession:</option>
+                        <option>All</option>
+                        <option>Salesperson</option>
+                        <option>Economist</option>
+                        <option>Painter</option>
+                        <option>Carpenter/Painter</option>
+                        <option>Carpenter</option>
+                        <option>Carpenter/Electrician</option>
+                        <option>Electrician</option>
+                        <option>Plumber</option>
+                        <option>Plumber/Mason</option>
+                        <option>Mason</option>
                     </select>
                 </div>
                 <div class="status">
                     <select class="dropdown">
                         <option>Status: </option>
-                        <option>Alla</option>
-                        <option>Tillgänglig</option>
-                        <option>Bokad 100%</option>
-                        <option>Bokad 50%</option>
-                        <option>Frånvaro</option>
+                        <option>All</option>
+                        <option>Available</option>
+                        <option>Booked 100%</option>
+                        <option>Booked 50%</option>
+                        <option>Absence</option>
                     </select>
                 </div>
                 <div class="week">
                     <select class="dropdown">
-                        <option>Vecka: </option>
-                        <option>Alla</option>
+                        <option>Week: </option>
+                        <option>All</option>
                         <option>v20-23</option>
                         <option>v24-27</option>
                         <option>v28-31</option>
@@ -75,16 +75,32 @@
             </div>
         </div>
 
-        <div id="app">
-            <div v-for="worker in workers" :key="worker.name">
-                <h3>{{ worker.name }}</h3>
-                <p>{{ worker.professions.join(", ") }}</p>
+     <div class="profession-block">
+        <div class="worker-row">
+            <div class="worker-identity">
+                <span class="name">Stefan Mcqueen</span>
+                <span class="title">Salesperson</span>
             </div>
+            <div class="schedule-grid">
+                <div class="week-group">
+                    <div class="day-block booked"></div>
+                    <div class="day-block booked"></div>
+                    <div class="day-block half"></div>
+                    <div class="day-block available"></div>
+                </div>
+                <div class="week-group">
+                    <div class="day-block absence">X</div>
+                    <div class="day-block available"></div>
+                    <div class="day-block available"></div>
+                    <div class="day-block booked"></div>
+
+            
+
+            </div>
+
         </div>
 
-    </div>
-
-    <script type="module" src="script.js"></script>
+        <script type="module" src="script.js"></script>
 </body>
 
 </html>
