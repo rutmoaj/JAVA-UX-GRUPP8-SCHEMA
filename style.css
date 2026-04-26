@@ -13,7 +13,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px 20px; */
     width: 100%;
     background-color: #ffffff;
     height: 68px;
@@ -136,7 +135,6 @@ body {
 .title {
     flex: 1;
     font-weight: bold;
-    /* Fetstil på yrket enligt din bild */
 }
 
 .week-headers {
