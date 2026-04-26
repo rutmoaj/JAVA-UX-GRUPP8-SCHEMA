@@ -208,10 +208,15 @@ body {
 }
 
 .half {
-    background: repeating-linear-gradient(45deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
-    border: 1px solid #e67e22;
-    border: 1px solid black;
+background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
+border: 1px solid #e67e22;
+border: 1px solid black;
 }
+
+/* .half {
+    background-image: url('resources/Rectangle50.png');
+    border: 1px solid black;
+} */
 
 
 .absence {
