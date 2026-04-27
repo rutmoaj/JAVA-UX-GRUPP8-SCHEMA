@@ -20,6 +20,7 @@ body {
 }
 
 .header h1 {
+    font-weight: 300;
     font-family: 'Girassol', serif;
     font-size: 30px;
     margin: 0;
@@ -119,7 +120,7 @@ body {
     padding: 15px 25px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
 }
 .drop-downs .filter-card {
@@ -139,7 +140,8 @@ body {
 }
 
 .drop-downs .filter-card:nth-child(4) {
-    width: 330px;
+width: 330px;
+
 }
 
 .drop-downs {
@@ -249,33 +251,33 @@ body {
     border: 3px solid #2ecc71;
 }
 
+/*Bokad*/
 .half {
     background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
     border: 1px solid #e67e22;
     border: 1px solid black;
 }
 
+/* bokad 2x50%
 .box.double {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 16px;
-    padding: 0px
+    padding: 0;
+    border: 1px solid black;
 }
 
-.half {
+.halv {
     flex: 1;
-    height: 6px;
-}
+    background: repeating-linear-gradient(
+        130deg,
+        #f39c12,
+        #f39c12 4px,
+        #fceabb 4px,
+        #fceabb 8px
+    );
+} */
 
-.top {
-    background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
-    border-bottom: 1px solid black;
-}
 
-.bottom {
-    background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
-}
 
 
 .absence {
