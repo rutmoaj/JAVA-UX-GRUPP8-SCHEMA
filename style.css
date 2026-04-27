@@ -20,6 +20,7 @@ body {
 }
 
 .header h1 {
+    font-weight: 300;
     font-family: 'Girassol', serif;
     font-size: 30px;
     margin: 0;
@@ -32,6 +33,18 @@ body {
     font-weight: bold;
 }
 
+.user-group {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icon {
+    height: 35px;
+    width: auto;
+}
+
 .logo-group {
     display: flex;
     align-items: center;
@@ -40,31 +53,27 @@ body {
 
 
 .header-icon {
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 
 .user-group {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: 40px;
-    width: 250px;
+    gap: 12px;
 }
 
 .user-icon {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     object-fit: cover;
 }
 
 .settings-icon {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    transition: transform 0.3s ease;
+    height: 25px;
+    width: auto;
+    margin-left: 5px;
+    transition: transform 0.3 ease;
 }
 
 .settings-icon:hover {
@@ -111,10 +120,9 @@ body {
     padding: 15px 25px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
 }
-
 .drop-downs .filter-card {
     height: 30px;
 }
@@ -132,7 +140,8 @@ body {
 }
 
 .drop-downs .filter-card:nth-child(4) {
-    width: 330px;
+width: 330px;
+
 }
 
 .drop-downs {
@@ -163,10 +172,11 @@ body {
     justify-content: center;
 }
 
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.stat-card .label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
 }
 
 .header-spacer {
@@ -241,33 +251,33 @@ body {
     border: 3px solid #2ecc71;
 }
 
+/*Bokad*/
 .half {
     background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
     border: 1px solid #e67e22;
     border: 1px solid black;
 }
 
+/* bokad 2x50%
 .box.double {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 16px;
-    padding: 0px
+    padding: 0;
+    border: 1px solid black;
 }
 
-.half {
+.halv {
     flex: 1;
-    height: 6px;
-}
+    background: repeating-linear-gradient(
+        130deg,
+        #f39c12,
+        #f39c12 4px,
+        #fceabb 4px,
+        #fceabb 8px
+    );
+} */
 
-.top {
-    background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
-    border-bottom: 1px solid black;
-}
 
-.bottom {
-    background: repeating-linear-gradient(130deg, #f39c12, #f39c12 4px, #fceabb 4px, #fceabb 8px);
-}
 
 
 .absence {
@@ -311,8 +321,7 @@ body {
 
 .legend {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: center gap: 20px;
     margin: 30px 40px 20px 45px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
