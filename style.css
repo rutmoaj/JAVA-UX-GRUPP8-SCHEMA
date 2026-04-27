@@ -100,11 +100,11 @@ body {
 }
 
 .drop-downs {
-    display: flex;
+    /* display: flex;
     align-items: center;
     gap: 12px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .profession-block {
