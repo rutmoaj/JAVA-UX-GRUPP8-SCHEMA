@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -126,7 +127,7 @@ body {
 .drop-downs .filter-card {
     height: 30px;
 }
-
+/* 
 .drop-downs .filter-card:nth-child(1) {
     width: 410px;
 }
@@ -142,9 +143,41 @@ body {
 .drop-downs .filter-card:nth-child(4) {
 width: 330px;
 
-}
+} */
+
 
 .drop-downs {
+  display: grid;
+    background-color: #2ecc71;
+  grid-template-columns: 410px 220px 263px 330px;
+  gap: 40px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+
+.stats-container {
+    background-color: aqua;
+  display: grid;
+  grid-template-columns: 410px 220px 263px 330px; 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+/* .drop-downs {
     display: flex;
     gap: 40px;
     margin-top: 20px;
@@ -155,22 +188,28 @@ width: 330px;
 
 .stats-container {
     display: flex;
-    gap: 70px;
+    gap: 20px;
     margin-top: 20px;
-    align-items: stretch;
 }
 
 .stat-card {
+    display: flex;
+    flex: 1;
+    
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+
     background: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    width: 285px;
+    padding: 12px 20px 12px 21px;
+    min-width: 0px;
+    border-radius: 8px;
+    
+    justify-content: space-between;
+    align-items: left;
+    align-self: stretch;
+    
+} */
 
 .stat-card .label {
     display: block;
@@ -321,7 +360,8 @@ width: 330px;
 
 .legend {
     display: flex;
-    align-items: center gap: 20px;
+    align-items: center;
+    gap: 20px;
     margin: 30px 40px 20px 45px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
