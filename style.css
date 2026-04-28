@@ -129,23 +129,6 @@ body {
     height: 30px;
 }
 
-/*
-.drop-downs .filter-card:nth-child(1) {
-    width: 410px;
-}
-
-.drop-downs .filter-card:nth-child(2) {
-    width: 220px;
-}
-
-.drop-downs .filter-card:nth-child(3) {
-    width: 263px;
-}
-
-.drop-downs .filter-card:nth-child(4) {
-width: 330px;
-
-} */
 
 
 .drop-downs {
@@ -160,14 +143,17 @@ width: 330px;
 .stats-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 24px;
     margin-top: 20px;
 }
 
 .stat-item {
+flex: 1; 
+    flex-basis: 200px;    
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    min-width: 200px;
 }
 
 .stat-card {
@@ -176,40 +162,33 @@ width: 330px;
     padding: 12px 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+
 }
 
-/* .drop-downs {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-    align-items: stretch;
-}
+
 
 /* STATISTIK-KORT TOP ROW KORTEN */
 
 .stats-container {
-    display: flex;
-    gap: 20px;
+display: flex;
+    flex-wrap: wrap;
+    gap: 20px;       
+    width: 100%;
     margin-top: 20px;
-       display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 }
 
 .stat-card {
-    display: flex;
-    flex: 1;
-
+display: flex;
+    background: white;
+    border-radius: 8px;
+    height: 75px;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-
-    background: white;
-    width: 290px;
-    border-radius: 8px;
-
-    justify-content: space-between;
-    align-items: left;
-    align-self: stretch;
+    font-weight: bold;
+    box-sizing: border-box;
 
 }
 
@@ -298,25 +277,6 @@ width: 330px;
     border: 1px solid #e67e22;
     border: 1px solid black;
 }
-
-/* bokad 2x50%
-.box.double {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    border: 1px solid black;
-}
-
-.halv {
-    flex: 1;
-    background: repeating-linear-gradient(
-        130deg,
-        #f39c12,
-        #f39c12 4px,
-        #fceabb 4px,
-        #fceabb 8px
-    );
-} */
 
 
 

@@ -261,7 +261,7 @@ createApp({
             }
 
         ]);
-        const sewer = ref([
+        const plumber = ref([
             {
                 name: "Harry Nemo",
                 role: "Rörmokare",
@@ -294,7 +294,7 @@ createApp({
             }
 
         ]);
-        const sewerTrump = ref([
+        const plumbmason = ref([
             {
                 name: "Sven Son",
                 role: "Rörmokare/Murare",
@@ -327,7 +327,7 @@ createApp({
             }
 
         ]);
-        const trump = ref([
+        const mason = ref([
             {
                 name: "Diana Mirakel",
                 role: "Murare",
@@ -368,9 +368,9 @@ createApp({
             handyMen,
             handyElec,
             electritian,
-            sewer,
-            sewerTrump,
-            trump,
+            plumber,
+            plumbmason,
+            mason,
             selectedProfession
         }
     }

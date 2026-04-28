@@ -78,21 +78,18 @@
                         <strong>8 personer</strong> 
                     </div> 
                 </div>
-               <span>     </span>
                 <div class="stat-item">
                     <p>Delvis bokade</p>
                     <div class="stat-card">
                         <strong>6 personer</strong>
                     </div>
                 </div>
-                <span>     </span>
                 <div class="stat-item">
                     <p>Fullt bokade</p>
                     <div class="stat-card">
                         <strong>10 personer</strong>
                     </div>
                 </div>
-                <span>     </span>
                 <div class="stat-item">
                     <p>Frånvarande</p>
                     <div class="stat-card">
@@ -121,12 +118,6 @@
                 <div class="box half"></div>
                 <span>Bokad 50%</span>
             </div>
-            <!-- 
-                 <div class="legend-item">
-                    <div class="box double">  
-                    <span>Bokad 2X50%</span>
-                    </div>
-                </div> -->
 
             <div class="legend-item">
                 <div class="box absence">X</div>
@@ -170,15 +161,15 @@
             </div>
 
             <div class="profession-card">
-                <worker-row v-for="w in sewer" :key="w.name" :worker="w" />
+                <worker-row v-for="w in plumber" :key="w.name" :worker="w" />
             </div>
 
             <div class="profession-card">
-                <worker-row v-for="w in sewerTrump" :key="w.name" :worker="w" />
+                <worker-row v-for="w in plumbmason" :key="w.name" :worker="w" />
             </div>
 
             <div class="profession-card">
-                <worker-row v-for="w in trump" :key="w.name" :worker="w" />
+                <worker-row v-for="w in mason" :key="w.name" :worker="w" />
             </div>
 
         </div>
